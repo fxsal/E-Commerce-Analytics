@@ -11,10 +11,10 @@ st.set_page_config(
     layout="wide"
 )
 # Load Data
-monthly_summary = pd.read_csv("dashboard_monthly_summary.csv")
-category_revenue = pd.read_csv("dashboard_revenue_by_category.csv")
-rfm_customer = pd.read_csv("dashboard_rfm_customer.csv")
-rfm_segment_summary = pd.read_csv("dashboard_rfm_segment_summary.csv")
+monthly_summary = pd.read_csv("dashboard/dashboard_monthly_summary.csv")
+category_revenue = pd.read_csv("dashboard/dashboard_revenue_by_category.csv")
+rfm_customer = pd.read_csv("dashboard/dashboard_rfm_customer.csv")
+rfm_segment_summary = pd.read_csv("dashboard/dashboard_rfm_segment_summary.csv")
 
 # Data handling
 monthly_summary["order_month"] = pd.to_datetime(monthly_summary["order_month"])
